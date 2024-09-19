@@ -37,7 +37,7 @@ const App = () => {
   return (
     <Container maxWidth="lg">
       <StyledAppBar position="static" color="inherit">
-        <StyledHeading variant="h2" align="center">Memories</StyledHeading>
+        <StyledHeading variant="h4" align="center">Global-Travel-Reviews</StyledHeading>
         <StyledImage src={memories} alt="icon" height="60" />
       </StyledAppBar>
       <Grow in>
