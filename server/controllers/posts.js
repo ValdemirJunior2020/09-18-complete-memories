@@ -73,7 +73,8 @@ export const deletePost = async (req, res) => {
     }
 
     try {
-        await PostMessage.findByIdAndRemove(id);
+        // Replace findByIdAndRemove with findByIdAndDelete
+        await PostMessage.findByIdAndDelete(id);
         return res.json({ message: "Post deleted successfully." });
     } catch (error) {
         return res.status(500).json({ message: error.message });

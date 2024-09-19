@@ -47,6 +47,7 @@ export const deletePost = (id) => async (dispatch) => {
     await api.deletePost(id);
     dispatch({ type: DELETE, payload: id });
   } catch (error) {
-    console.error(error.message);
+    console.error("Error deleting post:", error.response ? error.response.data : error.message);
   }
 };
+

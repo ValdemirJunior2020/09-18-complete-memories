@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://infojr83:joaquim2022@cluster0.ctdth.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const CONNECTION_URL = 'mongodb+srv://infojr83:joaquim2022@cluster0.k8vmg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, )
